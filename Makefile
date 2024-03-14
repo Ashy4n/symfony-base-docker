@@ -11,5 +11,6 @@ exec-php:
 
 rename-project:
 	rm -fr .git
-	cd ../ && mv ./symfony-base-docker ./$(name) && cd $(name)
+	cd ../ && mv ./symfony-base-docker ./$(name)
+	cd ../$(name)
 	git init

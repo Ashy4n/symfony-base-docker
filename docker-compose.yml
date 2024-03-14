@@ -1,9 +1,7 @@
 services:
   php:
     restart: unless-stopped
-    build:
-      args:
-        TIMEZONE: ${TIMEZONE}
+    build: ./docker/php-fmp
     volumes:
       - ${APP_WEB_PATH}:/var/www/html
     links:
