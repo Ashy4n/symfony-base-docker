@@ -10,7 +10,5 @@ exec-php:
 	docker exec -it ${PROJECT_NAME}-php-1 bash
 
 rename-project:
-	rm -fr .git
-	cd ../ && mv ./symfony-base-docker ./$(name)
-	cd ../$(name)
-	git init
+	cd ../ && cp -r ./symfony-base-docker ./$(name)
+	cd ../$(name) && rm -fr .git && git init

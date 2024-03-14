@@ -26,6 +26,7 @@ git clone git@github.com:Ashy4n/symfony-base-docker.git
 make rename-project name={your_name_of_choice}
  ```
 
+- Enter your new project directory
 - Set environment variables in ```./.docker/.env.docker``` file
 - Run command
 
