@@ -7,6 +7,7 @@ This project is basic setup for dockerized symfony application using:
 
 ## Running this docker setup
 
+- clone repository ```git clone git@github.com:Ashy4n/symfony-base-docker.git```
 - run ```make rename-project name={your_name_of_choice}```
 - Set environment variables in ```./.docker/.env.docker``` file
 - run ```make docker-build```
